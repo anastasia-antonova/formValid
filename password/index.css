@@ -3,12 +3,124 @@ body {
   background-color: #ffecc9;
 }
 body form {
-  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 420px;
+}
+body form .form-group {
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
-body form input {
-  margin-bottom: 16px;
+body form .form-group.form-group--error span {
+  display: block;
+  font-family: "Montserrat";
+  color: #ff1744;
+  margin-top: 2px;
+  font-size: 12px;
+}
+body form .form-group.form-group--error label {
+  color: #ff1744;
+}
+body form .form-group.form-group--error input {
+  border: 1px solid #ff1744;
+  color: #ff1744;
+}
+body form .form-group input, body form .form-group select, body form .form-group textarea {
+  min-width: 420px;
+  max-width: 420px;
+  max-height: 46px;
+  min-height: 46px;
+  border-radius: 5px;
+  border: 1px solid #DDDEE4;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  padding: 0 16px 0 16px;
+  box-sizing: border-box;
+}
+body form .form-group input::placeholder, body form .form-group select::placeholder, body form .form-group textarea::placeholder {
+  color: #B1B1B1;
+  opacity: 0.4;
+}
+body form .form-group label {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 12px;
+  color: rgba(18, 22, 33, 0.4);
+  margin-bottom: 8px;
+}
+body form .form-group span {
+  display: none;
+}
+body form p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #2c2a2a;
+  margin-top: 16px;
+  min-width: 479px;
+}
+body form .buttons2 {
+  font-family: "Montserrat";
+  padding: 16px 16px;
+  margin-top: 16px;
+  max-height: 48px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  cursor: pointer;
+  width: 100%;
+}
+body form .buttons2:hover {
+  background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+  color: white;
+}
+body .form2 {
+  margin-top: 50px;
+}
+body .form3 {
+  margin-top: 50px;
+}
+body .hotel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+body .hotel-section .hotel-list .hotels {
+  min-width: 200px;
+  background-color: #FFA96B;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+body .hotel-section .hotel-list .hotels img {
+  width: 100px;
+  height: 100px;
+}
+body .hotel-section .hotel-list .hotels .p-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

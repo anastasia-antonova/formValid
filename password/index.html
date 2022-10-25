@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
 <h1>Change password</h1>
@@ -15,18 +14,55 @@
     <div class="form-group">
         <label for="old">Old password</label>
         <input type="password" id="old">
+        <span class="required">Это поле обязательное</span>
+
     </div>
     <div class="form-group">
         <label for="new">new password</label>
         <input type="password" id="new">
+        <span class="required">Это поле обязательное</span>
+        <span class="not-symbol">кроме символов</span>
+
     </div>
     <div class="form-group">
         <label for="confirm">confirm password</label>
         <input type="password" id="confirm">
+        <span class="required">Это поле обязательное</span>
+        <span class="repit">not correct</span>
     </div>
     <p>Your password must be more than 12 	characters long, should contain at lest 1 Uppercase, 1 Lowercase,
         1 Numeric and 1 Special character.</p>
-    <button>jhg</button>
+    <button class="buttons2" type="button" onclick="send()">Reset password</button>
 </form>
+<section class="form2">
+    <form action="">
+        <div class="form-group">
+            <label for="old">FirstName and LastName</label>
+            <input type="input" id="name-lastname">
+            <span class="required">Это поле обязательное</span>
+        </div>
+        <button class="buttons2" type="button" onclick="task6()" >Тиць</button>
+    </form>
+</section>
+<section class="form3">
+    <form action="">
+        <div class="form-group">
+            <label for="gg">confirm password</label>
+            <input type="password" id="gg">
+            <span class="required">Это поле обязательное</span>
+        </div>
+        <button class="buttons2" type="button" onclick="task2()" >BigTits</button>
+        <button class="buttons2" type="button" onclick="task3()" >jhghg</button>
+    </form>
+</section>
+
+<section class="hotel-section">
+    <button class="buttons2" onclick="createHotelElements('lower')">Від меншого до більшого</button>
+    <button class="buttons2" onclick="createHotelElements('higher')">Від більшого до меншого</button>
+    <div class="hotel-list">
+    </div>
+</section>
+<script src="index.js"></script>
+<!--<script src="return_test.js"></script>-->
 </body>
 </html>

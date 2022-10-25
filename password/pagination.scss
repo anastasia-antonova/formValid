@@ -1,0 +1,51 @@
+body {
+  padding: 100px;
+  background-color: #ffecc9;
+
+  .pag {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      p {
+        display: block;
+        background-color: #B1B1B1;
+        width: 200px;
+        min-height: 200px;
+        font-size: 24px;
+        border-radius: 3px;
+        text-align: center;
+        padding-top:  19px;
+        box-sizing: border-box;
+
+
+      }
+    }
+    .pagination {
+      display: flex;
+      justify-content: center;
+
+      .left {
+        margin-right: 14px;
+      }
+      button {
+        width: 75px;
+        height: 25px;
+        margin-top: 13px;
+
+        &.active {
+          background-color: brown;
+          color: white;
+        }
+      }
+
+
+    }
+  }
+}

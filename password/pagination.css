@@ -1,0 +1,44 @@
+body {
+  padding: 100px;
+  background-color: #ffecc9;
+}
+body .pag {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .pag .content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .pag .content p {
+  display: block;
+  background-color: #B1B1B1;
+  width: 200px;
+  min-height: 200px;
+  font-size: 24px;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 19px;
+  box-sizing: border-box;
+}
+body .pag .pagination {
+  display: flex;
+  justify-content: center;
+}
+body .pag .pagination .left {
+  margin-right: 14px;
+}
+body .pag .pagination button {
+  width: 75px;
+  height: 25px;
+  margin-top: 13px;
+}
+body .pag .pagination button.active {
+  background-color: brown;
+  color: white;
+}
+
+/*# sourceMappingURL=pagination.css.map */
