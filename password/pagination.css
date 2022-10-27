@@ -26,7 +26,7 @@ body .pag .content p {
 }
 body .pag .pagination {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 body .pag .pagination .left {
   margin-right: 14px;
@@ -35,6 +35,9 @@ body .pag .pagination button {
   width: 75px;
   height: 25px;
   margin-top: 13px;
+}
+body .pag .pagination button.notClick {
+  cursor: inherit;
 }
 body .pag .pagination button.active {
   background-color: brown;
